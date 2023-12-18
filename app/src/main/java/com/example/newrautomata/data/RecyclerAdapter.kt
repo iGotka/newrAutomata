@@ -1,12 +1,12 @@
-package com.example.newrautomata
+package com.example.newrautomata.data
 
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.newrautomata.R
+import com.example.newrautomata.data.model.User
 
 class RecyclerAdapter (
     private val list: List<User>,

@@ -1,8 +1,9 @@
-package com.example.newrautomata
+package com.example.newrautomata.data
 
+import com.example.newrautomata.data.interfaces.APIServiceInterface
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import kotlinx.coroutines.*
+
 class ApiService {
     companion object {
 
@@ -11,15 +12,15 @@ class ApiService {
         @Volatile
     private var INSTANCE: APIServiceInterface? = null
 
-        fun getService():APIServiceInterface{
-            if (INSTANCE==null){
+        fun getService(): APIServiceInterface {
+            if (INSTANCE ==null){
                 synchronized(this){
-                    INSTANCE==buildService()
+                    INSTANCE == buildService()
                 }
             }
             return INSTANCE!!
         }
-        private fun buildService(): APIServiceInterface{
+        private fun buildService(): APIServiceInterface {
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())

@@ -1,9 +1,10 @@
-package com.example.newrautomata
+package com.example.newrautomata.data
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
+import com.example.newrautomata.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

@@ -1,4 +1,4 @@
-package com.example.newrautomata
+package com.example.newrautomata.data.model
 
 data class User(
     val id:Int,

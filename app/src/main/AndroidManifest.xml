@@ -15,10 +15,10 @@
         android:theme="@style/Theme.NewrAutomata"
         tools:targetApi="31">
         <activity
-            android:name=".UserActivity"
+            android:name=".data.UserActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".data.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

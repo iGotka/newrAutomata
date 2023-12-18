@@ -1,5 +1,6 @@
-package com.example.newrautomata
+package com.example.newrautomata.data.interfaces
 
+import com.example.newrautomata.data.model.User
 import retrofit2.http.GET
 import retrofit2.http.Path
 
